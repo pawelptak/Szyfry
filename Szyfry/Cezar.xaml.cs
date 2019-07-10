@@ -12,7 +12,7 @@ namespace Szyfry
     /// Logika interakcji dla klasy Cezar.xaml
     /// </summary>
     public partial class Cezar : Page
-    {    
+    {
         public Cezar()
         {
             InitializeComponent();

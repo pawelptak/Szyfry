@@ -35,7 +35,7 @@
                         <Border CornerRadius="0,8,8,0" BorderBrush="LightGray" BorderThickness="1,1,1,1">
                             <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
                         </Border>
-                        
+
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
@@ -57,11 +57,11 @@
 
                         </Grid>
                         <ControlTemplate.Triggers>
-                            
+
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" TargetName="border" Value="LightBlue"/>
                             </Trigger>
-                            
+
                             <Trigger Property="IsPressed" Value="True">
                                 <Setter Property="Background" TargetName="border">
                                     <Setter.Value>
@@ -69,7 +69,7 @@
                                     </Setter.Value>
                                 </Setter>
                             </Trigger>
-                            
+
                             <Trigger Property="IsEnabled" Value="False">
                                 <Setter Property="Opacity" TargetName="grid" Value="0.25"/>
                             </Trigger>
@@ -87,7 +87,7 @@
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid x:Name="grid">
                             <Border x:Name="border" CornerRadius="8" Background="{TemplateBinding Background}">
-                                
+
                                 <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center">
                                 </ContentPresenter>
@@ -98,7 +98,7 @@
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" TargetName="border" Value="LightBlue"/>
                             </Trigger>
-                            
+
                             <Trigger Property="IsPressed" Value="True">
                                 <Setter Property="Background" TargetName="border">
                                     <Setter.Value>
@@ -106,7 +106,7 @@
                                     </Setter.Value>
                                 </Setter>
                             </Trigger>
-                            
+
                             <Trigger Property="IsEnabled" Value="False">
                                 <Setter Property="Opacity" TargetName="grid" Value="0.25"/>
                             </Trigger>

@@ -3,6 +3,7 @@ using System;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -333,6 +334,17 @@ namespace Szyfry
                 }
                 Pole1.Text = szyfrogram;
             }
+        }
+
+        private static readonly Regex _regex = new Regex("[^0-9.-]+"); //zezwol tylko na liczby
+        private static bool CzyLiczby(string tekst)
+        {
+            return _regex.IsMatch(tekst);
+        }
+
+        private void TylkoLitery(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+            e.Handled = !CzyLiczby(e.Text);
         }
     }
 

@@ -12,7 +12,7 @@
         <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Center">
             <Button x:Name="Cezar" Content="Szyfr Cezara" Margin="5" MinWidth="120" Height="30" Style="{StaticResource Tryb}" Click="ZmienNaCezar"/>
             <Button x:Name="Playfair" Content="Szyfr Playfaira" Margin="5" MinWidth="120" Height="30" Style="{StaticResource Tryb}" Click="ZmienNaPlayfair" />
-            
+
         </StackPanel>
         <!--<StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,40,0" Orientation="Horizontal" VerticalAlignment="Top">
             <Button Grid.Column="1" Width="30" Height="30" HorizontalAlignment="Right">
@@ -25,5 +25,5 @@
 
 
     </Grid>
-    
+
 </Window>
