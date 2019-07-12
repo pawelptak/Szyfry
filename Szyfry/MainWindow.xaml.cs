@@ -14,7 +14,8 @@ namespace Szyfry
         public MainWindow()
         {
             InitializeComponent();
-            ZmienWidok();
+
+            UstawPlayfair();
             
         }
 
@@ -30,28 +31,8 @@ namespace Szyfry
             Glowna.Content = play;
             Cezar.Background = Brushes.LightGray;
             Playfair.Background = Brushes.DarkGray;
-        }
-
-        private void ZmienWidok()
-        {
-            if (Glowna.Content == cez)
-            {
-                Glowna.Content = play;
-                //Cezar.Style.
-                Cezar.Background = Brushes.LightGray;
-                Playfair.Background = Brushes.DarkGray;
-
-            }
-            else
-            {
-                Glowna.Content = cez;
-                // Cezar.Style = Cezar.FindResource("Wcisnieto") as Style;
-                Cezar.Background = Brushes.DarkGray;
-                Playfair.Background = Brushes.LightGray;
-            }
-        }
-
-       
+        }  
+        
         private void ZmienNaPlayfair(object sender, RoutedEventArgs e)
         {
             if (Glowna.Content == cez)
