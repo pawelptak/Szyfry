@@ -8,7 +8,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate>
-                        <Border CornerRadius="8" BorderBrush="LightGray" BorderThickness="1" Background="LightGray">
+                        <Border CornerRadius="15" BorderBrush="LightGray" BorderThickness="1" Background="LightGray">
                             <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
                         </Border>
                     </ControlTemplate>
@@ -20,7 +20,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate>
-                        <Border CornerRadius="8,0,0,8" BorderBrush="LightGray" BorderThickness="1,1,0,1">
+                        <Border CornerRadius="15,0,0,15" BorderBrush="LightGray" BorderThickness="1,1,0,1">
                             <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
                         </Border>
                     </ControlTemplate>
@@ -32,7 +32,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate>
-                        <Border CornerRadius="0,8,8,0" BorderBrush="LightGray" BorderThickness="1,1,1,1">
+                        <Border CornerRadius="0,15,15,0" BorderBrush="LightGray" BorderThickness="1,1,1,1">
                             <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
                         </Border>
 
@@ -46,7 +46,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid x:Name="grid">
-                            <Border x:Name="border" CornerRadius="8">
+                            <Border x:Name="border" CornerRadius="15">
                                 <Border.Background>
                                     <SolidColorBrush Color="LightGray"/>
                                 </Border.Background>
@@ -86,7 +86,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid x:Name="grid">
-                            <Border x:Name="border" CornerRadius="8" Background="{TemplateBinding Background}">
+                            <Border x:Name="border" CornerRadius="15" Background="{TemplateBinding Background}">
 
                                 <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center">
