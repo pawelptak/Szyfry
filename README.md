@@ -1,2 +1,2 @@
 # Szyfry
-Program pozwalający na zaszyfrowanie oraz odszyfrowanie teksty szyframi Cezara oraz Playfaira.
+Program pozwalający na zaszyfrowanie oraz odszyfrowanie tekstu szyframi Cezara oraz Playfaira.
